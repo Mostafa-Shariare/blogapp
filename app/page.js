@@ -34,10 +34,10 @@ export default function Home() {
                 Explore insightful articles, creative ideas, and inspiring stories from around the world.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="px-8 py-3 rounded-lg text-lg font-medium">
+                <button className="text-white px-8 py-3 rounded-lg text-lg font-medium">
                   Start Reading
                 </button>
-                <button className="px-8 py-3 rounded-lg text-lg font-medium border">
+                <button className="text-white px-8 py-3 rounded-lg text-lg font-medium border">
                   Subscribe
                 </button>
               </div>
@@ -78,7 +78,7 @@ export default function Home() {
           </div>
 
           {/* Top Posts Section */}
-          <div className="bg-white rounded-lg shadow-lg p-6">
+          <div className="rounded-lg shadow-lg p-6">
             <h2 className="text-2xl font-bold mb-6">Top Posts</h2>
             <div className="space-y-6">
               {/* Post 1 */}
@@ -137,7 +137,7 @@ export default function Home() {
       </section>
 
       {/* Featured Categories */}
-      <section className="bg-gray-50 py-16">
+      <section className=" py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 text-center">Featured Categories</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -204,13 +204,13 @@ export default function Home() {
       </section>
 
       {/* Trending Topics */}
-      <section className="bg-gray-50 py-16">
+      <section className="py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 text-center">Trending Topics</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {['Web Development', 'AI & Machine Learning', 'Cloud Computing', 'Cybersecurity'].map((topic) => (
               <div key={topic} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-                <h3 className="font-semibold text-lg mb-2">{topic}</h3>
+                <h3 className="text-black font-semibold text-lg mb-2">{topic}</h3>
                 <p className="text-sm text-gray-600">Latest articles and insights about {topic.toLowerCase()}</p>
               </div>
             ))}
